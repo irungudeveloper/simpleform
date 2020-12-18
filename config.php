@@ -1,11 +1,21 @@
 <?php 
 
-	$host="134.209.67.100";
+	$host="localhost";
 	$database="server_admin";
 	$user="nyaga"
 	$password="Nyaga@dm1n";
 
 	$connect = new mysqli($host,$database,$user,$password);
+
+
+	if($connect->connect_error)
+	{
+		echo "connect error". $connect->connect_error;
+	}else
+	{
+		echo "Connected";
+	}
+
 
 	public function insert($fname,$lname,$age)
 	{

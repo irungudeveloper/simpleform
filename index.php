@@ -2,20 +2,20 @@
 
 	require_once 'config.php';
 
-	$f_name;
-	$l_name;
-	$age;
+	// $f_name;
+	// $l_name;
+	// $age;
 
-	if ($_SERVER["REQUEST_METHOD"]=="POST") 
-	{
-		$f_name = $_POST['f_name'];
-		$l_name = $_POST['l_name'];
-		$age = $_POST['age'];
+	// if ($_SERVER["REQUEST_METHOD"]=="POST") 
+	// {
+	// 	$f_name = $_POST['f_name'];
+	// 	$l_name = $_POST['l_name'];
+	// 	$age = $_POST['age'];
 
-		insert($f_name,$l_name,$age);
-		echo "Data Inserted";
+	// 	insert($f_name,$l_name,$age);
+	// 	echo "Data Inserted";
 
-	}
+	// }
 
  ?>
 
